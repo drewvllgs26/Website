@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html style="background-color: #52616b">
+<head>
+  <title> About | AJ Mobigraphy</title>
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+<div class="topnav">
+  <div class ="logo">
+    <a href ="index.html"><img src = "images/logo.png" ></a></div>
+  <a href="contact.html">Contact</a>
+  <a class="active" href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="index.html">Home</a>
+</div>
+<div class="container1">
+  <div class="img-slides">
+    <div class="slide">
+      <img id="img1" src="images/andrew.jpg">
+      <img id="img2" src="images/andrew_pic2.jpg">
+      <img id="img3" src="images/andrew_pic3.jpg">
+    </div>
+    <div class="img-slides-nav">
+      <a href="#img1"></a>
+      <a href="#img2"></a>
+      <a href="#img3"></a>
+    </div>
+</div>
+  <div class="aboutme">
+    <h1>ABOUT ME</h1>
+    <intro>
+    <p>A warm welcome to you! Thank you for browsing my portfolio. 
+      As you may know my name is Andrew James M. Villegas, the creator / author of the shown photos and website. 
+      An aspiring 2nd year student from BSIT course of Pamantasan ng Lungsod ng Valenzuela.
+      <br>Aside from being a student, I love taking photos in my free time just 
+      by using my mobile phone because I can’t and I don’t have an actual camera, 
+      I always say that <br><br><b style="color: black">“A good camera, doesn’t define a photographer. What really 
+      matters is the shot being taken and its message”</b></p>
+      
+    </intro>
+    <div class="infotabs">
+      <input type="radio" name="slider" id="background"checked>
+      <input type="radio" name="slider" id="skills">
+      <input type="radio" name="slider" id="education">
+      <input type="radio" name="slider" id="experience">
+      <nav>
+        <label for="background" class="background">Background</label>
+        <label for="skills" class="skills">Skills</label>
+        <label for="education" class="education">Education</label>
+        <label for="experience" class="experience">Experience</label>
+        <div class="slider"></div>
+      </nav>
+      <section>
+        <div class="content content-1">
+          <div class="title">Background</div>
+          <p>My early years in Malabon City were characterized by a strong sense of curiosity and a desire to learn. 
+            I have always been fascinated by the wonders of technology. This fascination only grew stronger as I made 
+            my way through my formative years, inspiring me to investigate a variety of digital world aspects. During 
+            my high school years, I took a course of study which is Information and Communications Technology (ICT) to further 
+            explore the complexities of technology, driven by my natural curiosity. This educational experience prepared 
+            me for my subsequent enrollment in a college course focused on information technology (IT), where I was able 
+            to deepen my understanding of programming, website development, and application development. 
+            My sister, who also holds an IT degree, was a continual source of encouragement and support, 
+            which stoked my interest in technology even more. I have a strong affinity for all things tech, 
+            but I also have a newfound love for photography. In the fast-paced world of technology, taking pictures 
+            with a smartphone gives me a sense of peace and relaxation in addition to letting me express my creativity. 
+            My two passions, technology and photography, have helped me develop a wide range of skills and a distinct 
+            viewpoint that have shaped who I am today.
+          </p>
+        </div>
+        <div class="content content-2">
+          <div class="title">Skills</div>
+          <ul>
+            <li>UI/UX<br>Designer Application/Website Interfaces</li>
+            <br>
+            <li>Programmer<br>Java/C#</li>
+            <br>
+            <li>Photography<br>Mobile Photography</li>
+            <br>
+            <li>Online Gamer<br>Mobile Legends, Valorant, Tekken, Farlight 84</li>
+        </ul>
+        </div>
+        <div class="content content-3">
+          <div class="title">Education</div>
+          <ul>
+            <li>Elementary<br>Santulan Elementary School<br> Mary Immaculate School of Valenzuela<br>Panghulo Elementary School I</li>
+            <br>
+            <li>High School<br>Panghulo National High School<br>Our Lady of Fatima University</li>
+            <br>
+            <li>College<br>Pamantasan ng Lungsod ng Valenzuela</li>
+        </ul>
+        </div>
+        <div class="content content-4">
+          <div class="title">Experience</div>
+          <p>No work experience yet.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="clrfloats"></div>
+<footer>
+  <div class="brandname">
+  <a href="index.html"><img src = "images/brand_name.png"></a>
+  </div>
+  <div class="socmed">
+  <a href="https://www.facebook.com/krmbst26"><img src = "images/fb.png"></a>
+  <a href="https://twitter.com/andrizzjms_"><img src = "images/x.png"></a>
+  <a href="https://instagram.com/krmbst26"><img src = "images/instagram.png"></a>
+  </div>
+</footer>
+</body>
+
+<div id ="Loading">
+  <img src="images/brand_animated.gif">
+</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('loading');
+  const images = document.querySelectorAll(".img-slides img");
+  const navLinks = document.querySelectorAll(".img-slides-nav a");
+setTimeout(() => {
+  document.getElementById('Loading').classList.add('fade');
+  setTimeout(() => {
+    document.getElementById('Loading').remove();
+    document.body.classList.remove('loading');
+  }, 500);
+}, 2000);
+images.forEach((image, index) => {
+    image.addEventListener("click", () => {
+      removeActiveClass();
+      image.classList.add("active");
+      navLinks[index].classList.add("active");
+    });
+  });
+
+  navLinks.forEach((link, index) => {
+    link.addEventListener("click", () => {
+      removeActiveClass();
+      images[index].classList.add("active");
+      link.classList.add("active");
+    });
+  });
+
+  function removeActiveClass() {
+    images.forEach((image) => {
+      image.classList.remove("active");
+    });
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+    });
+  }
+});
+  </script>
+
+</html>

@@ -1,0 +1,432 @@
+@font-face {
+  font-family: OpenSauce-Bold;
+  src: url(../fonts/OpenSauceSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSauce;
+  src: url(../fonts/OpenSauceOne-Bold.ttf);
+}
+@font-face {
+  font-family: Horizon;
+  src: url(../fonts/Horizon.otf);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Horizon
+}
+
+#Loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #1e2022;
+  display: flex;
+  flex-direction: column;
+  opacity:1;
+  transition: opacity 1s;
+  top:0;
+  left:0;
+  justify-content: center;
+  align-items: center;
+}
+
+#Loading.fade {
+  opacity: 0;
+}
+
+.topnav {
+  max-width: 100%;
+  font-family: OpenSauce;
+  overflow:hidden;
+  background-color: #1e2022;
+  padding-right: 35px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: #52616B;
+}
+
+.topnav a {
+  float:right;
+  color: #c9d6df;
+  text-align: center;
+  padding: 50px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logo a {
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  padding-left: 20px;
+  float:left
+}
+
+.logo a img:hover {
+  content: url('../images/logo_animated.gif');
+  width: 180px;
+  height: 60px;
+}
+
+.brandname a img:hover{
+  content: url('../images/brand_animated.gif');
+  padding-left: 80px; 
+  padding-top: 20px; 
+  padding-bottom: 15px;
+  width: 140px; 
+  height: 40px;
+}
+
+.text-in-home h1{
+  font-size: 80px; 
+  color: #F0F5F9; 
+  text-align: center;
+}
+
+.text-in-home p{
+  display:flex;
+  color: #F0F5F9;
+  font-family: OpenSauce;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+.text-in-home p:nth-child(1){
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 4s,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 2s;
+  padding-top: 15px;
+}
+
+.text-in-home p:nth-child(2){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 4s;
+}
+
+.text-in-home p:nth-child(3){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 6s;
+}
+
+.text-in-home p:nth-child(4){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 8s;
+}
+
+.text-in-home p:nth-child(5){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 10s;
+}
+
+.text-in-home p:nth-child(6){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 12s;
+}
+
+.text-in-home p:nth-child(7){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 14s;
+}
+
+.text-in-home p:nth-child(8){
+  width: 100%;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+  animation:
+    typing 4s forwards,
+    cursor 4s step-end infinite alternate;
+  animation-delay: 16s;
+}
+
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rectangle{
+  float: left;
+  width:600px;
+  height:320px;
+  background:#1919199d;
+}
+
+footer{
+  position: absolute;
+  left: 0; 
+  bottom: 0; 
+  width: 100%; 
+  background-color: #1e2022; 
+  color: white;
+}
+
+.brandname a img{
+  float: left;
+  padding-left: 80px; 
+  padding-top: 20px; 
+  padding-bottom: 15px;
+  width: 140px; 
+  height: 40px;
+}
+
+.socmed {
+  padding-right: 80px;
+  float: right;
+}
+
+.socmed a img{
+  padding-top: 20px;
+  width:30px;
+  height:30px; 
+}
+
+.bg_image{
+  background-size: cover;
+  position: fixed;
+  width:  100%;
+  height: 80%;
+  background-image:url(../images/homebg.jpg);
+}
+
+.bg_image-overlay{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  background-color: #52616ba4;
+}
+
+@media only screen and (max-width: 1400px) {
+  #Loading img {
+    text-align: center;
+    width: 70%;
+    height: 10%;
+  }
+
+  .topnav  {
+    max-width: 100%;
+    background-color: #1e2022;
+    font-family: OpenSauce;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: right;
+    font-size: 10px;
+    color: #c9d6df; 
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .logo a {
+    padding: auto;
+  }
+  
+  .logo a img {
+    float: left;
+    height: 10%;
+    width: 20%;
+  }
+
+  .text-in-home h1{
+    font-size: 20px; 
+    color: #F0F5F9; 
+    text-align: center;
+  }
+
+  .text-in-home p{
+    display: flex;
+    position: relative;
+    color: #F0F5F9;
+    font-family: OpenSauce;
+    text-transform: uppercase;
+  }
+
+  .text-in-home p:nth-child(1){
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+      typing 4s,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 2s;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(2){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 4s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(3){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 6s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(4){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 8s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(5){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 10s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(6){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 12s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(7){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 14s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+  
+  .text-in-home p:nth-child(8){
+    width: 100%;
+    white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    animation:
+      typing 4s forwards,
+      cursor 4s step-end infinite alternate;
+    animation-delay: 16s;
+    padding-left: 30px;
+    font-size: 10px;
+  }
+
+  .rectangle{
+    width:640px;
+    height:200px;
+    background:#1919199d;
+  }
+
+  #container {
+    padding-left: 0%;
+    height: 500px;
+    width: 500px;
+  }
+
+  footer{
+    width: 100%; 
+    background-color: #1e2022; 
+  }
+
+  footer a img{
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 20%;
+    height: 10%;
+  }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en" style="background-color: #52616b">
+<head>
+    <title> Home | AJ Mobigraphy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<div class="topnav">
+  <div class ="logo">
+    <a href ="index.html"><img src = "images/logo.png" width= "180px" height="60px"></a></div>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a class="active" href="index.html">Home</a>
+</div>
+<div class = "bg_image">
+<div class="bg_image-overlay">
+  <div class ="text-in-home"><h1>MOBILE<br>PHOTOGRAPHY</h1>
+    <div id ="container">
+    <div class ="text-in-home">
+    <div class="rectangle">
+      <p>Welcome to my digital gallery, where every pixel</p>
+      <p>tells a story. Step into the vibrant world of</p>
+      <p>mobile photography excellence, where creativity</p>
+      <p>knows no bounds and moments are immortalized</p>
+      <p> with the touch of a screen.</p>
+      <p>Explore the curated collection of captivating</p>
+      <p>images captured through the lens of</p>
+      <p>innovation and passion.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="brandname">
+  <a href="index.html"><img src = "images/brand_name.png"></a>
+  </div>
+  <div class="socmed">
+  <a href="https://www.facebook.com/krmbst26"><img src = "images/fb.png"></a>
+  <a href="https://twitter.com/andrizzjms_"><img src = "images/x.png"></a>
+  <a href="https://instagram.com/krmbst26"><img src = "images/instagram.png"></a>
+  </div>
+</footer>
+</body>  
+<div id ="Loading">
+  <img src="images/logo_animated.gif">
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+document.body.classList.add('loading');
+});
+setTimeout(() => {
+document.getElementById('Loading').classList.add('fade');
+setTimeout(() => {
+  document.getElementById('Loading').remove();
+  document.body.classList.remove('loading');
+}, 500);
+}, 2000);
+</script>
+
+</html>

@@ -1,0 +1,342 @@
+  @font-face {
+      font-family: OpenSauce-Bold;
+      src: url(../fonts/OpenSauceSans-Bold.ttf);
+    }
+    @font-face {
+      font-family: OpenSauce;
+      src: url(../fonts/OpenSauceOne-Bold.ttf);
+    }
+    @font-face {
+      font-family: CanvaSans;
+      src: url(../fonts/work-sans.regular.ttf);
+    }
+    @font-face {
+      font-family: Horizon;
+      src: url(../fonts/Horizon.otf);
+    }
+
+    .clrfloats{
+      clear: both;
+    }
+
+    body {
+      margin: 0;
+      font-family: Horizon
+    }
+
+    .topnav a:hover {
+      color: black;
+    }
+    
+    .topnav a.active {
+      color: #52616B;
+    }
+    
+    .topnav {
+      font-family: OpenSauce;
+      overflow: hidden;
+      background-color: #1e2022;
+      padding-right: 35px;
+    }
+    
+    .topnav a {
+      float:right;
+      color: #c9d6df;
+      text-align: center;
+      padding: 50px 18px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .logo a {
+      padding-top: 30px;
+      padding-bottom: 30px; 
+      padding-left: 20px;
+      float:left;
+    }
+
+    .logo a img {
+      width: 180px;
+      height: 60px;
+    }
+    
+    .logo a img:hover {
+      content: url('../images/logo_animated.gif');
+      width: 180px;
+      height: 60px;
+    }
+
+    #Loading {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #1e2022;
+      display: flex;
+      opacity:1;
+      transition: opacity 1s;
+      top:0;
+      left:0;
+      justify-content: center;
+      align-items: center;
+      z-index:2;
+    }
+    
+    #Loading.fade {
+      opacity: 0;
+    }
+
+    body.loading {
+      overflow: hidden;
+    }
+
+    footer{
+      margin-top: 200px;
+      position: absolute;
+      width: 100%; 
+      background-color: #1e2022; 
+      color: white;
+    }
+    
+    .brandname a img{
+      float: left;
+      padding-left: 80px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+
+    .brandname a img:hover{
+      content: url('../images/brand_animated.gif');
+      padding-left: 80px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+    
+    .socmed {
+      padding-right: 80px;
+      float: right;
+    }
+    
+    .socmed a img{
+      padding-top: 20px;
+      width:30px;
+      height:30px; 
+    }
+
+    .container1{
+      padding-top: 80px;
+      margin: auto;
+      width: 1400px;
+    }
+
+    /* IMAGES */
+    .img-slides{
+      padding-top: 120px;
+      float: right;
+      position: relative;
+      width: 600px;
+    }
+
+    .slide{
+      display: flex;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      box-shadow: 0px 0px 10px 4px #1e2022;
+      border-radius: 0.5rem;
+      position: relative;
+    }
+
+    .slide img{
+      flex: 1 0 100%;
+      object-fit: cover;
+    }
+
+    .img-slides-nav{
+      display: inline-flex;
+      column-gap: 1rem;
+      position: absolute;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .img-slides-nav a{
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      background-color: #52616B;
+      opacity: 0.75;
+      transition: background-color 0.3s ease;
+    }
+
+    .img-slides-nav a.active{
+      background-color: #1e2022;
+    }
+
+    .img-slides-nav a:hover{
+      opacity: 1;
+      background-color: #1e2022;
+    }
+
+    /* INFO */
+
+  .aboutme{
+      width: 760px;
+      background-color: #1e202288;
+      float: left;
+  }
+
+  .aboutme intro{
+      padding-left: 20px;
+      display: flex;
+      width: 720px;
+  }
+
+  .aboutme h1{
+      font-size: 66px;
+      color: #F0F5F9;
+      text-align: center;
+      margin-bottom: 0;
+  }
+
+  .aboutme p{
+      font-family: CanvaSans;
+      font-size: 20px;
+      color: #F0F5F9;
+      text-align: justify;
+  }
+
+  .aboutme ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: CanvaSans;
+    font-size: 20px;
+    color: #F0F5F9;
+    text-align: justify;
+  }
+
+  .infotabs{
+      font-family: OpenSauce;
+      color: #F0F5F9;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 0 8px rgba(10, 31, 51, 0.2);
+  }
+
+  .infotabs nav{
+      position: relative;
+      height: 50px;
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .infotabs nav::after{
+      content: "";
+      background: silver;
+      width: 100%;
+      height: 1.5px;
+      position: absolute;
+      top: 47px;
+      filter: blur(0.5px);
+  }
+
+  .infotabs nav label{
+      position: relative;
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+  }
+
+  input[type='radio']{
+        display: none;
+  }
+
+  .infotabs nav .slider{
+        position: absolute;
+        height: 4.5px;
+        background-color: #1E2022;
+        border-radius: 20px;
+        width: 25%;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        transition: all 5 ease;
+        filter: blur(0.4px);
+  }
+
+  #skills:checked ~ nav .slider{
+    left: 25%;
+  }
+
+  #education:checked ~ nav .slider{
+    left: 50%;
+  }
+
+  #experience:checked ~ nav .slider{
+    left: 75%;
+  }
+
+  #background:checked ~ nav .background {
+    color: #1E2022;
+  }
+
+  #skills:checked ~ nav .skills{
+    color: #1E2022;
+  }
+
+  #education:checked ~ nav .education{
+    color: #1E2022;
+  }
+
+  #experience:checked ~ nav .experience{
+    color: #1E2022;
+  }
+
+  section{
+    filter: blur(0.3px);
+    width: 95%;
+    display: flex;
+  }
+
+  section .content{
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  section .content .title{
+    font-size: 21px;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+  }
+
+  #background:checked ~ section .content-1{
+    display: block;
+  }
+
+  #skills:checked ~ section .content-2{
+    display: block;
+  }
+
+  #education:checked ~ section .content-3{
+    display: block;
+  }
+
+  #experience:checked ~ section .content-4{
+    display: block;
+  }

@@ -1,0 +1,1189 @@
+  @font-face {
+    font-family: OpenSauce-Bold;
+    src: url(../fonts/OpenSauceOne-Black.ttf);
+  }
+  @font-face {
+    font-family: OpenSauce;
+    src: url(../fonts/OpenSauceOne-Bold.ttf);
+  }
+  @font-face {
+    font-family: CanvaSans;
+    src: url(../fonts/work-sans.regular.ttf);
+  }
+  @font-face {
+    font-family: Horizon;
+    src: url(../fonts/Horizon.otf);
+  }
+  
+  .clrfloats{
+    clear: both;
+  }
+
+  body {
+    margin: 0;
+    font-family: Horizon
+  }
+  
+  .topnav a:hover {
+      color: black;
+  }
+    
+  .topnav a.active {
+    color: #52616B;
+  }
+    
+  .topnav {
+    font-family: OpenSauce;
+    overflow: hidden;
+    background-color: #1e2022;
+    padding-right: 35px;
+  }
+    
+  .topnav a {
+    float:right;
+    color: #c9d6df;
+    text-align: center;
+      padding: 50px 18px;
+      text-decoration: none;
+      font-size: 18px;
+  }
+    
+  .logo a {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    padding-left: 20px;
+    float:left;
+  }
+
+  .logo a img {
+    width: 180px;
+    height: 60px;
+  }
+    
+  .logo a img:hover {
+    content: url('../images/logo_animated.gif');
+    width: 180px;
+    height: 60px;
+  }
+  
+  #Loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1e2022;
+    display: flex;
+    opacity:1;
+    transition: opacity 1s;
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+  }
+
+  #Loading.fade {
+    opacity: 0;
+  }
+
+  body.loading {
+    overflow: hidden;
+  }
+
+  .text-in-portfolio h1{
+    font-size: 66px; 
+    color: #F0F5F9; 
+    padding-top: 25px;
+    text-align: center;
+  }
+  
+  footer{
+    margin-top: 200px;
+    position: absolute;
+    width: 100%; 
+    background-color: #1e2022; 
+    color: white;
+  }
+  
+  .brandname a img{
+    float: left;
+    padding-left: 80px; 
+    padding-top: 20px; 
+    padding-bottom: 15px;
+    width: 140px; 
+    height: 40px;
+  }
+  
+  .brandname a img:hover{
+    content: url('../images/brand_animated.gif');
+    padding-left: 80px; 
+    padding-top: 20px; 
+    padding-bottom: 15px;
+    width: 140px; 
+    height: 40px;
+  }
+
+  .socmed {
+    padding-right: 80px;
+    float: right;
+  }
+  
+  .socmed a img{
+    padding-top: 20px;
+    width:30px;
+    height:30px; 
+  }
+
+  /* WORK 1,3,5 */
+
+  .container1{
+    padding-top: 20px;
+    margin: auto;
+    width: 1500px;
+  }
+
+  .imagecntnr {
+    float: left;
+    position: relative;
+    width: 500px;
+    display: flex;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+
+  .imagecntnr img{
+    transition: transform 0.5s;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagedesc {
+    color: #F0F5F9;
+    background-color: #1e202288;
+    float: right;
+    width: 950px;
+    height: 500px;
+  }
+
+  .imagedesc h1{
+    padding-top: 40px;
+    text-align: center;
+    font-family: OpenSauce-Bold;
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  .imagedesc p{
+    padding-top: 20px;
+    text-indent: 40px;
+    font-family: CanvaSans;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+
+  .imglayer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(30, 32, 34, 0.315),#1e2022);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+
+  .imglayer h1 {
+    font-family: OpenSauce-Bold;
+    color: #c9d6df;
+    margin-bottom: 0;
+  }
+
+  .imglayer p {
+    font-size: 24px;
+    font-family: CanvaSans;
+    color: #c9d6df;
+  }
+
+  .imagecntnr:hover .imglayer{
+    height: 100%;
+  }
+
+  .imagecntnr:hover img{
+    transform: scale(1.3);
+  }
+
+  /* WORK 2,4 */
+  .container2{
+    padding-top: 80px;
+    margin: auto;
+    width: 1500px;
+  }
+
+  .imagecntnr2 {
+    float: right;
+    position: relative;
+    width: 500px;
+    display: flex;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+
+  .imagecntnr2 img{
+    transition: transform 0.5s;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagedesc2 {
+    color: #F0F5F9;
+    background-color: #1e202288;
+    float: left;
+    width: 950px;
+    height: 500px;
+  }
+
+  .imagedesc2 h1{
+    padding-top: 40px;
+    text-align: center;
+    font-family: OpenSauce-Bold;
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  .imagedesc2 p{
+    padding-top: 20px;
+    text-indent: 40px;
+    font-family: CanvaSans;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+
+  .imglayer2{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(30, 32, 34, 0.315),#1e2022);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+
+  .imglayer2 h1 {
+    font-family: OpenSauce-Bold;
+    color: #c9d6df;
+    margin-bottom: 0;
+  }
+
+  .imglayer2 p {
+    font-size: 24px;
+    font-family: CanvaSans;
+    color: #c9d6df;
+  }
+
+  .imagecntnr2:hover .imglayer2{
+    height: 100%;
+  }
+
+  .imagecntnr2:hover img{
+    transform: scale(1.3);
+  }
+
+
+  /* MOBILE-S */
+  @media screen and (min-device-width: 320px) and (max-device-width: 374px) {
+
+    /* .cntr{
+      display:contents;
+    } */
+  
+    .topnav {
+      font-family: OpenSauce;
+      overflow: hidden;
+      background-color: #1e2022;
+      padding-right: 10px;
+      width: 100%;
+    }
+        
+    .topnav a {
+      float: right;
+      color: #c9d6df;
+      text-align: center;
+      padding: 30px 8px 0px 6px;
+      text-decoration: none;
+      font-size: 10px;
+      display: flex;
+    }
+  
+    .logo a {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 20px; 
+      float:left;
+    }
+  
+    .logo a img {
+      width: 90px;
+      height: 30px;
+    }
+
+    .logo a img:hover {
+      content: url('/images/logo_animated.gif');
+      width: 90px;
+      height: 30px;
+    }
+  
+    .text-in-portfolio h1{
+      font-size: 36px;
+      color: #F0F5F9;
+      padding-top: 20px;
+      width: 320px;
+      padding-left: 4px;
+    }
+  
+    footer{
+      padding-left: 10px;
+      margin-top: 50px;
+      position: absolute;
+      width: 320px; 
+      background-color: #1e2022; 
+      color: white;
+    }
+    
+    .brandname a img{
+      float: left;
+      padding-left: 20px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 120px; 
+      height: 35px;
+    }
+    
+    .brandname a img:hover{
+      content: url('/images/brand_animated.gif');
+      padding-left: 20px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 120px; 
+      height: 35px;
+    }
+
+    .socmed {
+      padding-right: 20px;
+      float: right;
+    }
+    
+    .socmed a img{
+      padding-top: 20px;
+      width:30px;
+      height:30px; 
+    }
+  
+    .container1{
+      padding-top: 20px;
+      margin: auto;
+      width: 320px;
+    }
+  
+    .imagecntnr {
+      position: relative;
+      width: 300px;
+      margin: 0%;
+      padding-left: 13px;
+    }
+  
+    .imagecntnr img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc {
+      float: left;
+      margin-top: 20px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      width: 330px;
+      height: 370px;
+    }
+  
+    .imagedesc h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+  
+    .container2{
+      padding-top: 20px;
+      margin: auto;
+      width: 320px;
+    }
+  
+    .imagecntnr2 {
+      position: relative;
+      width: 300px;
+      margin: 0%;
+      padding-right: 8px;
+    }
+  
+    .imagecntnr2 img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc2 {
+      float: left;
+      margin-top: 20px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      width: 330px;
+      height: 370px;
+    }
+  
+    .imagedesc2 h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc2 p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+  }
+
+  /* MOBILE-M */
+  @media screen and (min-device-width: 375px) and (max-device-width: 424px) {
+
+    /* .cntr{
+      display:contents;
+    }
+   */
+    .topnav {
+      font-family: OpenSauce;
+      overflow: hidden;
+      background-color: #1e2022;
+      padding-right: 10px;
+    }
+        
+    .topnav a {
+      float: right;
+      color: #c9d6df;
+      text-align: center;
+      padding: 30px 8px 0px 6px;
+      text-decoration: none;
+      font-size: 12px;
+      display: flex;
+    }
+  
+    .logo a {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 20px; 
+      float:left;
+    }
+  
+    .logo a img {
+      width: 105px;
+      height: 35px;
+    }
+
+    .logo a img:hover {
+      content: url('/images/logo_animated.gif');
+      width: 105px;
+      height: 35px;
+    }
+  
+    .text-in-portfolio h1{
+      font-size: 36px;
+      color: #F0F5F9;
+      padding-top: 20px;
+    }
+  
+    footer{
+      margin-top: 50px;
+      position: absolute;
+      width: 100%; 
+      background-color: #1e2022; 
+      color: white;
+    }
+    
+    .brandname a img{
+      float: left;
+      padding-left: 30px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+    
+    .brandname a img:hover{
+      content: url('/images/brand_animated.gif');
+      padding-left: 30px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+
+    .socmed {
+      padding-right: 30px;
+      float: right;
+    }
+    
+    .socmed a img{
+      padding-top: 20px;
+      width:30px;
+      height:30px; 
+    }
+  
+    .container1{
+      padding-top: 20px;
+      margin: auto;
+      width: 340px;
+    }
+  
+    .imagecntnr {
+      position: relative;
+      width: 340px;
+      margin: 0%;
+    }
+  
+    .imagecntnr img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc {
+      margin-top: 20px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: left;
+      width: 340px;
+      height: 340px;
+    }
+  
+    .imagedesc h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+  
+    .container2{
+      padding-top: 30px;
+      padding-right: 15px;
+      margin: auto;
+      width: 340px;
+    }
+  
+    .imagecntnr2 {
+      position: relative;
+      width: 340px;
+      display: flex;
+      overflow: hidden;
+    }
+  
+    .imagecntnr2 img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc2 {
+      margin-top: 20px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: left;
+      width: 340px;
+      height: 340px;
+    }
+  
+    .imagedesc2 h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc2 p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+  }
+
+  /* MOBILE-L */
+  @media screen and (min-device-width: 425px) and (max-device-width: 767px){
+/* 
+  .cntr{
+    display:contents;
+  } */
+
+  .topnav {
+    font-family: OpenSauce;
+    overflow: hidden;
+    background-color: #1e2022;
+    padding-right: 10px;
+  }
+      
+  .topnav a {
+    float: right;
+    color: #c9d6df;
+    text-align: center;
+    padding: 30px 8px 0px 6px;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+  }
+
+  .logo a {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px; 
+    float:left;
+  }
+
+  .logo a img {
+    width: 105px;
+    height: 35px;
+  }
+
+  .logo a img:hover {
+    content: url('/images/logo_animated.gif');
+    width: 105px;
+    height: 35px;
+  }
+
+  .text-in-portfolio h1{
+    font-size: 36px;
+    color: #F0F5F9;
+    padding-top: 20px;
+  }
+
+  footer{
+    margin-top: 50px;
+    position: absolute;
+    width: 100%; 
+    background-color: #1e2022; 
+    color: white;
+  }
+  
+  .brandname a img{
+    float: left;
+    padding-left: 30px; 
+    padding-top: 20px; 
+    padding-bottom: 15px;
+    width: 140px; 
+    height: 40px;
+  }
+
+  .brandname a img:hover{
+    content: url('/images/brand_animated.gif');
+    padding-left: 30px; 
+    padding-top: 20px; 
+    padding-bottom: 15px;
+    width: 140px; 
+    height: 40px;
+  }
+
+  .socmed {
+    padding-right: 30px;
+    float: right;
+  }
+  
+  .socmed a img{
+    padding-top: 20px;
+    width:30px;
+    height:30px; 
+  }
+
+  .container1{
+    padding-top: 20px;
+    margin: auto;
+    width: 380px;
+  }
+
+  .imagecntnr {
+    position: relative;
+    width: 380px;
+    margin: 0%;
+  }
+
+  .imagecntnr img{
+    transition: transform 0.5s;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagedesc {
+    margin-top: 20px;
+    color: #F0F5F9;
+    background-color: #1e202288;
+    float: left;
+    width: 380px;
+    height: 320px;
+  }
+
+  .imagedesc h1{
+    padding-top: 0px;
+    text-align: center;
+    font-family: OpenSauce-Bold;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .imagedesc p{
+    padding-top: 0px;
+    text-indent: 40px;
+    font-family: CanvaSans;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+
+  .container2{
+    padding-top: 30px;
+    padding-right: 15px;
+    margin: auto;
+    width: 380px;
+  }
+
+  .imagecntnr2 {
+    position: relative;
+    width: 380px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .imagecntnr2 img{
+    transition: transform 0.5s;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagedesc2 {
+    margin-top: 20px;
+    color: #F0F5F9;
+    background-color: #1e202288;
+    float: left;
+    width: 380px;
+    height: 320px;
+  }
+
+  .imagedesc2 h1{
+    padding-top: 0px;
+    text-align: center;
+    font-family: OpenSauce-Bold;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .imagedesc2 p{
+    padding-top: 0px;
+    text-indent: 40px;
+    font-family: CanvaSans;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+  
+  }
+
+  /* TABLET */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+/* 
+    .cntr{
+      display:contents;
+    } */
+  
+    .topnav {
+      font-family: OpenSauce;
+      overflow: hidden;
+      background-color: #1e2022;
+      padding-right: 10px;
+    }
+        
+    .topnav a {
+      float: right;
+      color: #c9d6df;
+      text-align: center;
+      padding: 35px 12px 0px 6px;
+      text-decoration: none;
+      font-size: 15px;
+      display: flex;
+    }
+  
+    .logo a {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 20px; 
+      float:left;
+    }
+  
+    .logo a img {
+      width: 150px;
+      height: 50px;
+    }
+
+    .logo a img:hover {
+      content: url('/images/logo_animated.gif');
+      width: 150px;
+      height: 50px;
+    }
+  
+    .text-in-portfolio h1{
+      font-size: 50px;
+      color: #F0F5F9;
+      padding-top: 20px;
+    }
+  
+    footer{
+      margin-top: 50px;
+      position: absolute;
+      width: 100%; 
+      background-color: #1e2022; 
+      color: white;
+    }
+    
+    .brandname a img{
+      float: left;
+      padding-left: 30px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+
+    .brandname a img:hover{
+      content: url('/images/brand_animated.gif');
+      padding-left: 30px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+  
+    .socmed {
+      padding-right: 30px;
+      float: right;
+    }
+    
+    .socmed a img{
+      padding-top: 20px;
+      width:30px;
+      height:30px; 
+    }
+  
+    .container1{
+      padding-top: 20px;
+      margin: auto;
+      width: 720px;
+    }
+  
+    .imagecntnr {
+      position: relative;
+      width: 300px;
+      margin: 0%;
+    }
+  
+    .imagecntnr img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc {
+      margin-top: 0px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: right;
+      width: 400px;
+      height: 300px;
+    }
+  
+    .imagedesc h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+  
+    .container2{
+      padding-top: 30px;
+      padding-right: 15px;
+      margin: auto;
+      width: 720px;
+    }
+  
+    .imagecntnr2 {
+      position: relative;
+      width: 300px;
+      display: flex;
+      overflow: hidden;
+    }
+  
+    .imagecntnr2 img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc2 {
+      margin-top: 0px;
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: left;
+      width: 400px;
+      height: 300px;
+    }
+  
+    .imagedesc2 h1{
+      padding-top: 0px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc2 p{
+      padding-top: 0px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+  }
+
+
+  @media screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+
+    .cntr{
+      display:contents;
+    }
+  
+    .topnav {
+      width: 100%;
+      font-family: OpenSauce;
+      overflow: hidden;
+      background-color: #1e2022;
+      padding-right: 10px;
+    }
+        
+    .topnav a {
+      float: right;
+      color: #c9d6df;
+      text-align: center;
+      padding: 35px 12px 0px 6px;
+      text-decoration: none;
+      font-size: 15px;
+      display: flex;
+    }
+  
+    .logo a {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 20px; 
+      float:left;
+    }
+  
+    .logo a img {
+      width: 150px;
+      height: 50px;
+    }
+  
+    .text-in-portfolio h1{
+      font-size: 62px;
+      color: #F0F5F9;
+      padding-top: 20px;
+    }
+  
+    footer{
+      padding-left: 20px;
+      margin-top: 50px;
+      position: absolute;
+      width: 100%; 
+      background-color: #1e2022; 
+      color: white;
+    }
+    
+    .brandname a img{
+      float: left;
+      padding-left: 30px; 
+      padding-top: 20px; 
+      padding-bottom: 15px;
+      width: 140px; 
+      height: 40px;
+    }
+  
+    .socmed {
+      padding-right: 30px;
+      float: right;
+    }
+    
+    .socmed a img{
+      padding-top: 20px;
+      width:30px;
+      height:30px; 
+    }
+  
+    .container1{
+      padding-top: 20px;
+      margin: auto;
+      width: 900px;
+    }
+  
+    .imagecntnr {
+      position: relative;
+      width: 400px;
+      margin: 0%;
+    }
+  
+    .imagecntnr img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc {
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: right;
+      width: 470px;
+      height: 400px;
+    }
+  
+    .imagedesc h1{
+      padding-top: 20px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc p{
+      padding-top: 20px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+  
+    .container2{
+      padding-top: 20px;
+      margin: auto;
+      width: 900px;
+    }
+  
+    .imagecntnr2 {
+      position: relative;
+      width: 400px;
+      display: flex;
+      overflow: hidden;
+    }
+  
+    .imagecntnr2 img{
+      transition: transform 0.5s;
+      width: 100%;
+      height: auto;
+    }
+    
+    .imagedesc2 {
+      color: #F0F5F9;
+      background-color: #1e202288;
+      float: left;
+      width: 470px;
+      height: 400px;
+    }
+  
+    .imagedesc2 h1{
+      padding-top: 20px;
+      text-align: center;
+      font-family: OpenSauce-Bold;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    .imagedesc2 p{
+      padding-top: 20px;
+      text-indent: 40px;
+      font-family: CanvaSans;
+      font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+  }
